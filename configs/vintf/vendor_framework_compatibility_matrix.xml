@@ -76,6 +76,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>panoStitching</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>2</version>
+        <interface>
+            <name>IBluetoothAudioProviderFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
         <version>2.1</version>
@@ -337,6 +345,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
              <instance>slot1</instance>
          </interface>
      </hal>
+     <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <version>3</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+     </hal>
      <hal format="hidl" optional="true">
          <name>vendor.qti.hardware.cacert</name>
          <version>1.0</version>
@@ -344,6 +360,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
              <name>IService</name>
              <instance>default</instance>
          </interface>
+     </hal>
+     <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.hostapd</name>
+        <version>1</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+        </interface>
      </hal>
      <hal format="hidl" optional="true">
          <name>vendor.qti.hardware.fm</name>
@@ -429,6 +453,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
              <name>IDeviceInfo</name>
              <instance>deviceinfo</instance>
          </interface>
+     </hal>
+     <hal format="aidl" optional="true">
+        <name>android.hardware.wifi.supplicant</name>
+        <version>1</version>
+        <interface>
+            <name>ISupplicant</name>
+            <instance>default</instance>
+        </interface>
      </hal>
      <hal format="aidl" optional="true">
          <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
@@ -1202,6 +1234,14 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          <version>1</version>
          <interface>
              <name>ISecureElementService</name>
+             <instance>default</instance>
+         </interface>
+     </hal>
+     <hal format="hidl" optional="true">
+         <name>android.hardware.wifi</name>
+         <version>1.0-6</version>
+         <interface>
+             <name>IWifi</name>
              <instance>default</instance>
          </interface>
      </hal>
