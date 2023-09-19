@@ -128,6 +128,9 @@ PRODUCT_COPY_FILES += \
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 
+#BT
+TARGET_USE_QTI_BT_STACK := false
+
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \
@@ -137,7 +140,10 @@ PRODUCT_PACKAGES += \
     bootctrl.parrot.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
-    bootctl
+    bootctl \
+    android.hardware.bluetooth@1.0 \
+    android.hardware.bluetooth@1.0.vendor \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor
 
 # Camera
 #$(call inherit-product-if-exists, vendor/xiaomi/miuicamera/config.mk)
@@ -545,3 +551,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
+#device/qcom/common modules
+TARGET_COMMON_QTI_COMPONENTS := \
+    av \
+    bt \
+    gps \
+    telephony \
+    usb \
+    vibrator
